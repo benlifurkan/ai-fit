@@ -1,0 +1,181 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ================= VUE-SONNER TOAST (minimal) ================= */
+
+/* Toaster her zaman her şeyin üstünde olsun */
+[data-sonner-toaster] {
+  z-index: 999999 !important;
+}
+
+/* Toast item'ları tıklanabilir kalsın */
+[data-sonner-toast],
+li[data-sonner-toast] {
+  pointer-events: auto !important;
+}
+
+/* Sticky navbar kullanıldığı için padding-top gerekmiyor */
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+#app {
+  min-height: 100vh;
+}
+
+/* ================= VUETIFY INPUT FIELDS - GLOBAL ================= */
+
+/* Light mode input fields */
+body.theme-light .v-field {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+}
+
+body.theme-light .v-field__input {
+  color: #0f172a !important;
+}
+
+body.theme-light .v-field__input::placeholder {
+  color: rgba(100, 116, 139, 0.6) !important;
+}
+
+body.theme-light .v-field__outline {
+  border-color: rgba(148, 163, 184, 0.4) !important;
+}
+
+body.theme-light .v-field--focused .v-field__outline {
+  border-color: #2563eb !important;
+}
+
+body.theme-light .v-label {
+  color: rgba(71, 85, 105, 0.9) !important;
+}
+
+body.theme-light .v-field--focused .v-label {
+  color: #2563eb !important;
+}
+
+body.theme-light .v-field__prepend-inner,
+body.theme-light .v-field__append-inner {
+  color: rgba(71, 85, 105, 0.8) !important;
+}
+
+/* Dark mode input fields */
+body.theme-dark .v-field {
+  background-color: #020617 !important;
+  color: #e5e7eb !important;
+}
+
+body.theme-dark .v-field__input {
+  color: #e5e7eb !important;
+}
+
+body.theme-dark .v-field__input::placeholder {
+  color: rgba(148, 163, 184, 0.6) !important;
+}
+
+body.theme-dark .v-field__outline {
+  border-color: rgba(148, 163, 184, 0.5) !important;
+}
+
+body.theme-dark .v-field--focused .v-field__outline {
+  border-color: #38bdf8 !important;
+}
+
+body.theme-dark .v-label {
+  color: rgba(203, 213, 225, 0.9) !important;
+}
+
+body.theme-dark .v-field--focused .v-label {
+  color: #38bdf8 !important;
+}
+
+body.theme-dark .v-field__prepend-inner,
+body.theme-dark .v-field__append-inner {
+  color: rgba(203, 213, 225, 0.8) !important;
+}
+
+/* ================= VUETIFY SELECT FIELDS ================= */
+
+body.theme-light .v-select__selection {
+  color: #0f172a !important;
+}
+
+body.theme-dark .v-select__selection {
+  color: #e5e7eb !important;
+}
+
+/* ================= VUETIFY CHIPS ================= */
+
+body.theme-light .v-chip {
+  color: #0f172a !important;
+}
+
+body.theme-dark .v-chip {
+  color: #e5e7eb !important;
+}
+
+/* ================= VUETIFY CARDS ================= */
+
+body.theme-light .v-card {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+}
+
+body.theme-dark .v-card {
+  background-color: #020617 !important;
+  color: #e5e7eb !important;
+}
+
+/* ================= VUETIFY ALERTS ================= */
+
+body.theme-light .v-alert {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+}
+
+body.theme-dark .v-alert {
+  background-color: #020617 !important;
+  color: #e5e7eb !important;
+}
+
+/* ================= VUETIFY LISTS ================= */
+
+body.theme-light .v-list {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+}
+
+body.theme-dark .v-list {
+  background-color: #020617 !important;
+  color: #e5e7eb !important;
+}
+
+body.theme-light .v-list-item-title {
+  color: #0f172a !important;
+}
+
+body.theme-dark .v-list-item-title {
+  color: #e5e7eb !important;
+}
+
+body.theme-light .v-list-item-subtitle {
+  color: rgba(71, 85, 105, 0.8) !important;
+}
+
+body.theme-dark .v-list-item-subtitle {
+  color: rgba(203, 213, 225, 0.8) !important;
+}
